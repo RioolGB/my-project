@@ -1,3 +1,6 @@
+# Преобразование целого числа в двоичную, восьмиричную систему исчисления
+
+# Задаем переменные чтобы избавиться от "магических чисел"
 OCT = 8
 BIN = 2
 ZERO = 0
@@ -10,4 +13,6 @@ for div in BIN, OCT:
     while new_num != ZERO:
         result = str(new_num % div) + result
         new_num //= div
+
+
     print(result)
